@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zip", "Zip\Zip.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utils", "Utils\Utils.vcxproj", "{16B2909D-726B-4EF5-96B3-B61535B76DDF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextRecognizer", "App\TextRecognizer\TextRecognizer.vcxproj", "{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{16B2909D-726B-4EF5-96B3-B61535B76DDF}.Release|x64.Build.0 = Release|x64
 		{16B2909D-726B-4EF5-96B3-B61535B76DDF}.Release|x86.ActiveCfg = Release|Win32
 		{16B2909D-726B-4EF5-96B3-B61535B76DDF}.Release|x86.Build.0 = Release|Win32
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Debug|x64.ActiveCfg = Debug|x64
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Debug|x64.Build.0 = Debug|x64
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Debug|x86.ActiveCfg = Debug|Win32
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Debug|x86.Build.0 = Debug|Win32
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Release|x64.ActiveCfg = Release|x64
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Release|x64.Build.0 = Release|x64
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Release|x86.ActiveCfg = Release|Win32
+		{6EB1D1CC-C03E-42D1-9359-23D36F1E8F72}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
