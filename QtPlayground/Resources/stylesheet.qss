@@ -1,237 +1,30 @@
-/* ScrollBar */
-QScrollBar::add-line, 
-QScrollBar::sub-line {
-	height: 0px;
-	width: 0px;
+QSlider#slider-hor {
+	background-color: yellow;
+	
 }
 
-QScrollBar::add-page:vertical,
-QScrollBar::sub-page:vertical {
-	background-color: #2c2d37;
-}
-
-QScrollBar:vertical {
-	background: #2c2d37;
+QSlider#slider-hor::handle:horizontal {
+	/* background-color: #ffffff; */
+	background-color: green;
 	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
 }
 
-QScrollBar::handle:vertical {
-	background-color: #7f75798e;
-	border: 1px solid #7f75798e;
-	border-radius: 3px;
-	margin: 2px;
-	min-height: 10px;
+QSlider#slider-hor::groove:horizontal {
+	/* subcontrol-origin: content; */
+	/* padding: 5px; */
+	/* margin: 4px 0; */
+	background: transparent;
 }
 
-QAbstractItemView QScrollBar::add-page:vertical,
-QAbstractItemView QScrollBar::sub-page:vertical {
-	background-color: #1a1a1e;
-}
-
-QAbstractItemView QScrollBar:vertical {
+QSlider#slider-hor::sub-page:horizontal {
 	background: #1a1a1e;
-	width: 10px;
+	margin: 14px 0px 4px 0px;
 }
 
-QAbstractItemView QScrollBar::handle:vertical {
-	background-color: #7f75798e;
-	border: 1px solid #7f75798e;
-	border-radius: 3px;
-	margin: 2px;
-	min-height: 10px;
-}
-
-QScrollArea#warning QScrollBar::add-page:vertical,
-QScrollArea#warning QScrollBar::sub-page:vertical {
-	background-color: #1a1a1e;
-}
-
-QScrollArea#warning QScrollBar:vertical {
+QSlider#slider-hor::add-page:horizontal {
+	margin: 14px 0px 4px 0px;
 	background: #1a1a1e;
-	width: 10px;
 }
-
-/* CheckBox */
-QCheckBox {
-	background-color: transparent;
-	border: none;
-	spacing: 10px;
-}
-
-QCheckBox:disabled {
-	color: #4cffffff;
-}
-
-QCheckBox::indicator:checked {
-	image: url(:/img/checkbox_ck);
-}
-
-QCheckBox::indicator:checked:disabled {
-	image: url(:/img/checkbox_ck_dis);
-}
-
-QCheckBox::indicator:unchecked {
-	image: url(:/img/checkbox_uck);
-}
-
-QCheckBox::indicator:unchecked:disabled {
-	image: url(:/img/checkbox_uck_dis);
-}
-
-QCheckBox#pick-magnitude,
-QCheckBox#pick-position,
-QCheckBox#show-pointname,
-QCheckBox#show-stimulator,
-QCheckBox#show-systempoint {
-	font-size: 10px;
-	spacing: 5px;
-}
-
-QCheckBox#pick-magnitude,
-QCheckBox#pick-position,
-QCheckBox#show-pointname,
-QCheckBox#show-stimulator,
-QCheckBox#show-systempoint {
-	height: 30px;
-	width: 30px;
-}
-
-QCheckBox#pick-magnitude::indicator:checked:disabled,
-QCheckBox#pick-magnitude::indicator:unchecked:disabled {
-	image: url(:/img/btn_magnitudepicker_dis);
-}
-
-QCheckBox#pick-magnitude::indicator:unchecked {
-	image: url(:/img/btn_magnitudepicker_off);
-}
-
-QCheckBox#pick-magnitude::indicator:checked:pressed,
-QCheckBox#pick-magnitude::indicator:unchecked:hover {
-	image: url(:/img/btn_magnitudepicker_offhover_onpress);
-}
-
-QCheckBox#pick-magnitude::indicator:checked,
-QCheckBox#pick-magnitude::indicator:checked:hover,
-QCheckBox#pick-magnitude::indicator:unchecked:pressed {
-	image: url(:/img/btn_magnitudepicker_on_offpress);
-}
-
-QCheckBox#pick-position::indicator:checked:disabled,
-QCheckBox#pick-position::indicator:unchecked:disabled {
-	image: url(:/img/btn_picker_dis);
-}
-
-QCheckBox#pick-position::indicator:unchecked {
-	image: url(:/img/btn_picker_off);
-}
-
-QCheckBox#pick-position::indicator:checked:pressed,
-QCheckBox#pick-position::indicator:unchecked:hover {
-	image: url(:/img/btn_picker_offhover_onpress);
-}
-
-QCheckBox#pick-position::indicator:checked,
-QCheckBox#pick-position::indicator:checked:hover,
-QCheckBox#pick-position::indicator:unchecked:pressed {
-	image: url(:/img/btn_picker_on_offpress);
-}
-
-QCheckBox#show-pointname::indicator:checked:disabled
-QCheckBox#show-pointname::indicator:unchecked:disabled {
-	image: url(:/img/btn_point_name_dis);
-}
-
-QCheckBox#show-pointname::indicator:unchecked {
-	image: url(:/img/btn_point_name_off);
-}
-
-QCheckBox#show-pointname::indicator:checked:pressed,
-QCheckBox#show-pointname::indicator:unchecked:hover {
-	image: url(:/img/btn_point_name_offhover_onpress);
-}
-
-QCheckBox#show-pointname::indicator:checked,
-QCheckBox#show-pointname::indicator:checked:hover,
-QCheckBox#show-pointname::indicator:unchecked:pressed {
-	image: url(:/img/btn_point_name_on_offpress);
-}
-
-QCheckBox#show-stimulator::indicator:checked:disabled,
-QCheckBox#show-stimulator::indicator:unchecked:disabled {
-	image: url(:/img/btn_showstimulator_dis);
-}
-
-QCheckBox#show-stimulator::indicator:unchecked {
-	image: url(:/img/btn_showstimulator_off);
-}
-
-QCheckBox#show-stimulator::indicator:checked:pressed,
-QCheckBox#show-stimulator::indicator:unchecked:hover {
-	image: url(:/img/btn_showstimulator_offhover_onpress);
-}
-
-QCheckBox#show-stimulator::indicator:checked,
-QCheckBox#show-stimulator::indicator:checked:hover,
-QCheckBox#show-stimulator::indicator:unchecked:pressed {
-	image: url(:/img/btn_showstimulator_on_offpress);
-}
-
-QCheckBox#show-systempoint::indicator:checked:disabled,
-QCheckBox#show-systempoint::indicator:unchecked:disabled {
-	image: url(:/img/btn_systempoint_dis);
-}
-
-QCheckBox#show-systempoint::indicator:unchecked {
-	image: url(:/img/btn_systempoint_off);
-}
-
-QCheckBox#show-systempoint::indicator:checked:pressed,
-QCheckBox#show-systempoint::indicator:unchecked:hover {
-	image: url(:/img/btn_systempoint_offhover_onpress);
-}
-
-QCheckBox#show-systempoint::indicator:checked,
-QCheckBox#show-systempoint::indicator:checked:hover,
-QCheckBox#show-systempoint::indicator:unchecked:pressed {
-	image: url(:/img/btn_systempoint_on_offpress);
-}
-
-QCheckBox#tool-cursor::indicator {
-	height: 42px;
-	width: 42px;
-}
-
-QCheckBox#tool-cursor::indicator:unchecked {
-	image: url(%26);
-}
-
-QCheckBox#tool-cursor::indicator:hover {
-	background-color: #26262d;
-	image: url(%27);
-}
-
-QCheckBox#tool-cursor::indicator:checked {
-	background-color: #1a1a1e;
-	image: url(%28);
-}
-
-		"QCheckBox#tool-brush::indicator {width: 42px; height: 42px;}"
-		"QCheckBox#tool-brush::indicator:unchecked {image: url(%29);}"
-		"QCheckBox#tool-brush::indicator:hover {image: url(%30); background-color: #26262d;}"
-		"QCheckBox#tool-brush::indicator:checked {image: url(%31); background-color: #1a1a1e;}"
-		"QCheckBox#tool-brush::indicator:disabled {image: url(%32);}"
-
-		"QCheckBox#tool-eraser::indicator {width: 42px; height: 42px;}"
-		"QCheckBox#tool-eraser::indicator:unchecked {image: url(%33);}"
-		"QCheckBox#tool-eraser::indicator:hover {image: url(%34); background-color: #26262d;}"
-		"QCheckBox#tool-eraser::indicator:checked {image: url(%35); background-color: #1a1a1e;}"
-		"QCheckBox#tool-eraser::indicator:disabled {image: url(%36);}"
-
-		"QCheckBox#shape-rectangular::indicator {width: 30px; height: 30px;}"
-		"QCheckBox#shape-rectangular::indicator:unchecked:disabled, QCheckBox#shape-rectangular::indicator:checked:disabled {image: url(%37);}"
-		"QCheckBox#shape-rectangular::indicator:unchecked {image: url(%38);}"
-		"QCheckBox#shape-rectangular::indicator:unchecked:hover {image: url(%39);}"
-		"QCheckBox#shape-rectangular::indicator:unchecked:pressed {image: url(%40);}"
-		"QCheckBox#shape-rectangular::indicator:checked {image: url(%41);}"
-		"QCheckBox#shape-rectangular::indicator:checked:hover {image: url(%41);}"
-		"QCheckBox#shape-rectangular::indicator:checked:pressed {image: url(%40);}"

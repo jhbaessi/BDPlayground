@@ -13,14 +13,14 @@
 #include <QXmlStreamWriter>
 #include <QDoubleSpinBox>
 
-#define PATH_STYLESHEET "D:\\devel\\Playground\\QtPlayground\\Resources\\stylesheet.qss"
+#define PATH_STYLESHEET "D:\\devel\\BDPlayground\\QtPlayground\\Resources\\stylesheet.qss"
 
 #define	PATH_XML	"D:\\devel\\QtTestbed\\QtTestbed\\Resources\\xml_test.xml"
 
 QtTestbed::QtTestbed(QWidget *parent)
 	: QMainWindow(parent)
 {
-	//QResource::registerResource(QCoreApplication::applicationDirPath() + "/res.rcc");
+	//QResource::registerResource(QCoreApxplication::applicationDirPath() + "/res.rcc");
 	UpdateStylesheet();
 
 	SetupUi();
@@ -41,7 +41,9 @@ void QtTestbed::SetupUi()
 	connect(ui.pushButton_Reload, SIGNAL(clicked()), this, SLOT(UpdateStylesheet()));
 
 	ui.pushButton->setObjectName("button");
-	
+
+	ui.horizontalSlider->setObjectName("slider-hor");
+
 #if 0
 	// add widgets
 	QVBoxLayout *pMainLayout = new QVBoxLayout;
